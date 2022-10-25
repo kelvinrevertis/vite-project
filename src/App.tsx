@@ -9,8 +9,13 @@ function App() {
   return (
 
       <div>
+        <nav>
         <Login/>
-
+        </nav>
+        <Routes>
+          <Router path="/api/auth/login" element={<Home/>}/>
+          <Router path="" element={<Home/>/>
+        </Routes>
     </div>
   )
 }
